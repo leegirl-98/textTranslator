@@ -1,0 +1,8 @@
+from translate import Translator
+import pyttsx3
+lang=input("enter the translated language")
+translator= Translator(from_lang="english",to_lang=lang)
+a=input("enter the string which u want to translate")
+translation=translator.translate(a)
+print(translation)
+pyttsx3.speak(translation)
